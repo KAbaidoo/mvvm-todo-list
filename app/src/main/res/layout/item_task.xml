@@ -14,7 +14,7 @@
         android:minHeight="0dp" />
 
     <TextView
-        android:id="@+id/textView_item"
+        android:id="@+id/textView_task_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/checkbox_completed"
