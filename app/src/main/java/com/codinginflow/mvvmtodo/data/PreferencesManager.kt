@@ -2,7 +2,6 @@ package com.codinginflow.mvvmtodo.data
 
 import android.content.Context
 import android.util.Log
-import androidx.datastore.createDataStore
 import androidx.datastore.preferences.createDataStore
 import androidx.datastore.preferences.edit
 import androidx.datastore.preferences.emptyPreferences
@@ -25,7 +24,6 @@ data class FilterPreferences(val sortOrder: SortOrder, val hideCompleted: Boolea
 class PreferencesManager @Inject constructor(@ApplicationContext context: Context) {
 
     private val dataStore = context.createDataStore("user_preferences")
-
     val preferencesFlow = dataStore.data
         .catch {
             exception ->
